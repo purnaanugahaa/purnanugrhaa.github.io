@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purna Nugraha — Digital Marketing, Gaming Services & Kreator RAHASIKA</title>
+<meta name="description" content="Portofolio Purna Nugraha: freelancer digital marketing & gaming services 5+ tahun, 500+ transaksi, klien dari 4 negara, dan kreator video animasi edukasi RAHASIKA.">
+<link rel="icon" type="image/svg+xml" href="https://portofolio-purna-jejabvsj-8871.vercel.app/images/favicon.svg">
+<link rel="apple-touch-icon" href="https://portofolio-purna-jejabvsj-8871.vercel.app/images/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://purnanugraha20-hue.github.io/">
+<meta property="og:title" content="Purna Nugraha — Digital Marketing, Gaming Services & Kreator RAHASIKA">
+<meta property="og:description" content="Freelancer digital marketing & gaming services 5+ tahun, 500+ transaksi, klien dari 4 negara, dan kreator video animasi edukasi RAHASIKA.">
+<meta property="og:image" content="https://portofolio-purna-jejabvsj-8871.vercel.app/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Purna Nugraha — Digital Marketing, Gaming Services & Kreator RAHASIKA">
+<meta name="twitter:description" content="Freelancer digital marketing & gaming services 5+ tahun, 500+ transaksi, klien dari 4 negara, dan kreator video animasi edukasi RAHASIKA.">
+<meta name="twitter:image" content="https://portofolio-purna-jejabvsj-8871.vercel.app/images/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f6f2; --ink:#16181d; --muted:#5c6169; --card:#ffffff; --line:#e3e0d8;
+  --accent:#1e40af; --accent-soft:#e9edfb; --tint:#eef1f6;
+  --shadow:0 10px 30px rgba(22,24,29,.07); --shadow-lg:0 18px 44px rgba(22,24,29,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+section{padding:72px 20px;max-width:1080px;margin:0 auto}
+h1,h2,h3{font-family:'Archivo',sans-serif;line-height:1.1}
+.accent{color:var(--accent)}
+.eyebrow{font-family:'Archivo';font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:12.5px;color:var(--accent)}
+
+/* ===== ANIMASI (halus, tanpa pantulan) ===== */
+@keyframes riseIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.hero .eyebrow,.hero h1,.hero p.lead,.hero .cta-row,.hero .roles{animation:riseIn .7s cubic-bezier(.2,.7,.2,1) both}
+.hero .eyebrow{animation-delay:1.0s}
+.hero h1{animation-delay:1.1s}
+.hero p.lead{animation-delay:1.2s}
+.hero .cta-row{animation-delay:1.3s}
+.hero .roles{animation-delay:1.4s}
+.hero .photo-frame{animation:riseIn .8s cubic-bezier(.2,.7,.2,1) 1.2s both}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* HERO */
+.hero{position:relative;min-height:88vh;display:flex;flex-direction:column;justify-content:center;max-width:1080px;margin:0 auto;padding:96px 20px 64px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(46px,7.5vw,84px);font-weight:900;letter-spacing:-.02em}
+.hero p.lead{font-size:clamp(17px,2.4vw,21px);font-weight:500;color:var(--muted);max-width:600px;margin:20px 0 28px}
+.hero p.lead b{color:var(--ink);font-weight:700}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;font-family:'Archivo';font-weight:700;font-size:15.5px;padding:14px 24px;border-radius:10px;border:1px solid var(--ink);transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn:active{transform:translateY(0)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-ghost{background:var(--card);color:var(--ink)}
+.hero .roles{margin-top:28px;display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-family:'Archivo';font-weight:600;font-size:13.5px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 14px;color:var(--muted)}
+
+/* FOTO PROFIL */
+.photo-frame{position:relative;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-lg);max-width:380px;justify-self:end}
+.photo-frame img{display:block;width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;transition:scale .4s ease}
+.photo-frame:hover img{scale:1.03}
+.photo-badge{position:absolute;left:14px;bottom:14px;background:rgba(22,24,29,.88);color:#fff;font-family:'Archivo';font-weight:700;font-size:13.5px;padding:8px 14px;border-radius:999px}
+.photo-badge .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#34d399;margin-right:8px}
+
+/* STATS */
+.stats-bar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:32px 0}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;text-align:center}
+.stat .num{font-family:'Archivo';font-weight:900;font-size:clamp(28px,4vw,40px);letter-spacing:-.01em}
+.stat .lbl{font-size:13px;font-weight:500;color:var(--muted);margin-top:2px}
+@media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.stat:last-child{grid-column:1/-1}.hero-grid{grid-template-columns:1fr;gap:32px}.photo-frame{justify-self:center;max-width:320px}}
+
+/* SECTION HEADS */
+.sec-head{margin-bottom:32px}
+.sec-head h2{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.01em;margin-top:10px}
+.sec-head p{margin-top:12px;max-width:640px;font-size:16.5px;color:var(--muted)}
+
+/* KARTU UMUM */
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid var(--line);border-radius:14px;padding:28px 24px;background:var(--card);box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.card h3{font-size:20px;font-weight:800}
+.card p{font-size:15px;color:var(--muted)}
+@media(max-width:820px){.card-grid{grid-template-columns:1fr}}
+
+/* LAYANAN */
+.card.svc{border-top:3px solid var(--accent)}
+.card.svc .ico{width:46px;height:46px;border-radius:11px;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center}
+.card.svc .ico svg{width:23px;height:23px}
+.card ul{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:15px}
+.card ul li{padding-left:22px;position:relative}
+.card ul li::before{content:"";position:absolute;left:2px;top:9px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.card .note{font-size:13.5px;background:var(--accent-soft);color:var(--ink);border-radius:8px;padding:10px 12px}
+.card .mini-cta{margin-top:auto;font-family:'Archivo';font-weight:700;font-size:14.5px;color:var(--accent)}
+
+/* KENAPA PILIH SAYA */
+.why-num{font-family:'Archivo';font-weight:900;font-size:30px;color:var(--accent);letter-spacing:-.01em}
+.why-card h3{margin-top:2px}
+
+/* KARYA RAHASIKA */
+section#karya{background:var(--tint);border-radius:20px}
+.videos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.video-card{border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:var(--shadow);padding:14px;transition:transform .2s ease,box-shadow .2s ease}
+.video-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.video-wrap{position:relative}
+.video-wrap video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:9px;background:#111;display:block;transition:scale .35s ease}
+.video-card:hover .video-wrap video{scale:1.02}
+.dur{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.78);color:#fff;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px}
+.play-hint{position:absolute;left:10px;bottom:10px;background:var(--accent);color:#fff;font-family:'Archivo';font-weight:700;font-size:12px;padding:5px 11px;border-radius:999px}
+.video-card h3{font-size:18px;margin:14px 0 6px;line-height:1.25}
+.video-card p{font-size:14px;color:var(--muted)}
+.karya-cta{margin-top:26px;text-align:center;font-size:16.5px;font-weight:500;color:var(--muted)}
+.karya-cta a{font-family:'Archivo';font-weight:700;color:var(--accent);border-bottom:2px solid var(--accent)}
+@media(max-width:820px){.videos{grid-template-columns:1fr;max-width:360px;margin:0 auto}}
+
+/* CASE STUDIES */
+.case{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;box-shadow:var(--shadow);margin-bottom:18px;transition:transform .2s ease,box-shadow .2s ease}
+.case:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.case .meta{font-family:'Archivo';font-weight:700;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.case h3{font-size:23px;font-weight:800;margin:8px 0 12px}
+.case table{width:100%;border-collapse:collapse;font-size:15px}
+.case td{padding:10px 0;border-top:1px solid var(--line);vertical-align:top}
+.case td:first-child{font-weight:600;width:150px;color:var(--muted)}
+.isi{color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:1px 6px;font-size:13px;font-weight:600}
+
+/* PRESTASI */
+.achieve{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.trophy{background:#16181d;color:#fff;border-radius:14px;padding:24px;box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .2s ease}
+.trophy:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.trophy-photo{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center;border-radius:10px;margin-bottom:18px;transition:scale .35s ease}
+.trophy:hover .trophy-photo{scale:1.02}
+.trophy .badge{display:inline-block;font-family:'Archivo';font-weight:700;font-size:12px;letter-spacing:.08em;color:#f5c542;border:1px solid rgba(245,197,66,.5);border-radius:999px;padding:5px 12px;margin-bottom:12px}
+.trophy h3{font-size:21px;margin-bottom:6px}
+.trophy p{font-size:14.5px;color:rgba(255,255,255,.75)}
+@media(max-width:700px){.achieve{grid-template-columns:1fr}}
+
+/* TESTIMONI */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.testi-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px 24px;box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .2s ease}
+.testi-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.testi-card .stars{color:#d97706;font-size:16px;letter-spacing:2px}
+.testi-card p{font-size:15.5px;margin:12px 0 16px}
+.testi-card .who b{display:block;font-family:'Archivo';font-size:15px}
+.testi-card .who span{font-size:13px;color:var(--muted)}
+.testi-cta{text-align:center;margin-top:28px}
+@media(max-width:820px){.testi-grid{grid-template-columns:1fr}}
+
+/* LANGKAH */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 20px;box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .2s ease}
+.step:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.step .n{font-family:'Archivo';font-weight:900;font-size:28px;color:var(--accent)}
+.step h3{font-size:17px;margin:8px 0 6px}
+.step p{font-size:14px;color:var(--muted)}
+@media(max-width:820px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq{display:flex;flex-direction:column;gap:12px}
+.faq details{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:18px 20px;transition:border-color .15s ease}
+.faq details[open]{border-color:var(--accent)}
+.faq summary{cursor:pointer;font-family:'Archivo';font-weight:700;font-size:16.5px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .plus{font-size:22px;font-weight:500;color:var(--accent);transition:rotate .25s ease;flex-shrink:0}
+.faq details[open ] summary .plus{rotate:45deg}
+.faq details p{margin-top:12px;font-size:15px;color:var(--muted)}
+
+/* KONTAK */
+.contact{background:#16181d;color:#fff;border-radius:20px;padding:48px 28px;text-align:center}
+.contact h2{font-size:clamp(28px,5vw,44px);font-weight:800}
+.contact p{color:rgba(255,255,255,.75);margin:12px auto 26px;max-width:520px}
+.contact .links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.contact .btn{border-color:rgba(255,255,255,.35)}
+.contact .btn-primary{background:var(--accent);border-color:var(--accent)}
+.contact .btn-ghost{background:transparent;color:#fff}
+footer{text-align:center;padding:28px 16px 44px;font-size:13.5px;color:var(--muted)}
+
+/* ===== PRELOADER ===== */
+.loader{position:fixed;inset:0;z-index:100;background:#16181d;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;pointer-events:none;transition:transform .7s cubic-bezier(.7,0,.3,1);animation:loaderFailsafe .7s cubic-bezier(.7,0,.3,1) 4s forwards}
+.loader.done{transform:translateY(-100%)}
+.loader-accent{position:fixed;inset:0;z-index:99;background:#1e40af;pointer-events:none;transition:transform .7s cubic-bezier(.7,0,.3,1) .12s;animation:loaderFailsafe .7s cubic-bezier(.7,0,.3,1) 4.12s forwards}
+.loader-accent.done{transform:translateY(-100%)}
+@keyframes loaderFailsafe{to{transform:translateY(-100%)}}
+.loader .mark{font-family:'Archivo';font-weight:900;font-size:clamp(40px,8vw,64px);color:#fff;letter-spacing:-.02em}
+.loader .mark .w{color:#fff}
+.loader .mark .w.acc{color:#8aa8ff}
+.loader .mark i{display:inline-block;font-style:normal;opacity:0;transform:translateY(28px);animation:lmUp .65s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes lmUp{to{opacity:1;transform:none}}
+.loader .tag{font-family:'Inter';font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.55);opacity:0;animation:lmFade .6s ease .9s forwards}
+@keyframes lmFade{to{opacity:1}}
+.loader .prog{display:flex;align-items:center;gap:12px;margin-top:8px}
+.loader .bar{width:180px;height:3px;border-radius:99px;background:rgba(255,255,255,.16);overflow:hidden}
+.loader .bar i{display:block;height:100%;width:0;border-radius:99px;background:#8aa8ff;transition:width 1.4s cubic-bezier(.3,.7,.3,1)}
+.loader .pct{font-family:'Archivo';font-size:12px;font-weight:700;color:rgba(255,255,255,.6);min-width:36px}
+
+/* ===== PROGRESS BAR ===== */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:90}
+
+/* ===== MODE GELAP ===== */
+html[data-theme="dark"]{--bg:#101114;--ink:#f1f0eb;--muted:#a7abb3;--card:#1a1c20;--line:#2a2d33;--accent:#8aa8ff;--accent-soft:#1d2438;--tint:#15171c;--shadow:0 10px 30px rgba(0,0,0,.35);--shadow-lg:0 18px 44px rgba(0,0,0,.5)}
+html[data-theme="dark"] .trophy{background:#1a1c20;border:1px solid var(--line)}
+html[data-theme="dark"] .contact{background:#1a1c20;border:1px solid var(--line)}
+.theme-toggle{position:fixed;top:14px;right:14px;z-index:95;width:46px;height:46px;border-radius:50%;background:var(--card);border:1px solid var(--line);color:var(--ink);cursor:pointer;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;transition:transform .15s ease}
+.theme-toggle:hover{transform:scale(1.08)}
+.theme-toggle svg{width:21px;height:21px}
+.theme-toggle .icon-sun{display:none}
+html[data-theme="dark"] .theme-toggle .icon-sun{display:block}
+html[data-theme="dark"] .theme-toggle .icon-moon{display:none}
+
+/* ===== PRELOADER SEKALI PER KUNJUNGAN ===== */
+html.seen .loader,html.seen .loader-accent{display:none}
+html.seen .hero .eyebrow{animation-delay:.05s}
+html.seen .hero h1{animation-delay:.1s}
+html.seen .hero p.lead{animation-delay:.18s}
+html.seen .hero .cta-row{animation-delay:.26s}
+html.seen .hero .roles{animation-delay:.34s}
+html.seen .hero .photo-frame{animation-delay:.15s}
+
+/* ===== ANIMASI DEWASA: marquee kalem, garis judul tumbuh, ikon hover, zoom foto pelan ===== */
+.marquee{overflow:hidden;background:#16181d;color:rgba(255,255,255,.85);padding:13px 0}
+.marquee-track{display:flex;width:max-content;white-space:nowrap;font-family:'Archivo';font-weight:600;font-size:13px;letter-spacing:.22em;animation:scrollX 36s linear infinite}
+.marquee-track span{padding:0 22px}
+.marquee-track .dot{color:var(--accent);padding:0}
+@keyframes scrollX{to{transform:translateX(-50%)}}
+.scroll-cue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;font-family:'Archivo';font-weight:600;font-size:11px;letter-spacing:.28em;color:var(--muted)}
+.scroll-cue i{display:block;width:1px;height:44px;background:var(--line);position:relative;overflow:hidden}
+.scroll-cue i::after{content:"";position:absolute;left:0;top:-40%;width:100%;height:40%;background:var(--accent);animation:cueDrop 1.8s ease-in-out infinite}
+@keyframes cueDrop{to{top:110%}}
+.sec-head .eyebrow::after{content:"";display:block;width:36px;height:2px;background:var(--accent);margin-top:10px;transform:scaleX(0);transform-origin:left;transition:transform .6s ease .25s}
+.sec-head.in .eyebrow::after{transform:scaleX(1)}
+.card.svc .ico{transition:transform .25s ease}
+.card.svc:hover .ico{transform:scale(1.1) rotate(-4deg)}
+.photo-frame img{animation:kenburns 16s ease-in-out infinite alternate}
+.photo-frame:hover img{animation-play-state:paused}
+@keyframes kenburns{from{scale:1}to{scale:1.05}}
+.chip{transition:border-color .2s ease,color .2s ease}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ===== BIODATA (Tentang Saya, 2 kolom) ===== */
+.bio{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}
+.bio-text p{font-size:16.5px;color:var(--muted);margin-bottom:16px}
+.bio-text p b{color:var(--ink)}
+.bio-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;box-shadow:var(--shadow)}
+.bio-card h3{font-size:16px;margin-bottom:8px}
+.bio-card dl div{display:flex;gap:16px;padding:11px 0;border-top:1px solid var(--line)}
+.bio-card dt{width:108px;flex-shrink:0;font-weight:600;color:var(--muted);font-size:14px}
+.bio-card dd{font-size:14.5px;font-weight:500}
+@media(max-width:820px){.bio{grid-template-columns:1fr;gap:28px}}
+
+/* ===== TOMBOL BAHASA ID/EN ===== */
+.lang-toggle{position:fixed;top:14px;right:70px;z-index:95;height:46px;padding:0 14px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--muted);cursor:pointer;box-shadow:var(--shadow);font-family:'Archivo';font-weight:700;font-size:13px;display:flex;align-items:center;gap:7px;transition:transform .15s ease}
+.lang-toggle:hover{transform:scale(1.05)}
+.lang-toggle span.on{color:var(--accent)}
+
+/* ===== TOMBOL WHATSAPP MELAYANG ===== */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:80;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(37,211,102,.4);opacity:0;transform:translateY(16px);transition:opacity .4s ease,transform .4s ease}
+.wa-float.show{opacity:1;transform:none}
+.wa-float:hover{transform:translateY(-2px) scale(1.05)}
+.wa-float svg{width:28px;height:28px}
+</style>
+<script>try{var t=localStorage.getItem('pf-theme');if(t)document.documentElement.setAttribute('data-theme',t);if(sessionStorage.getItem('pf-seen'))document.documentElement.classList.add('seen')}catch(e){}</script>
+</head>
+<body>
+<div class="loader"><div class="mark"><span class="w">Purna</span> <span class="w acc">Nugraha</span></div><div class="tag">Digital Marketing · Gaming Services · RAHASIKA</div><div class="prog"><div class="bar"><i></i></div><span class="pct">0%</span></div></div>
+<div class="loader-accent"></div>
+<div class="progress" id="progress"></div>
+<button class="theme-toggle" id="themeToggle" aria-label="Ganti tema gelap/terang">
+<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+<button class="lang-toggle" id="langToggle" aria-label="Ganti bahasa / Switch language"><span class="on" data-lang="id">ID</span><span aria-hidden="true">|</span><span data-lang="en">EN</span></button>
+
+<header class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Portofolio 2026</p>
+      <h1>Purna <span class="accent">Nugraha</span></h1>
+      <p class="lead">Halo, saya <b>Purna Nugraha</b> — freelancer digital marketing &amp; gaming services. Membantu bisnis dan pemain sampai beres, dipercaya klien dari Indonesia, Malaysia, Pakistan, dan Arab Saudi.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://wa.me/6289627939527" target="_blank" rel="noopener">Chat WhatsApp</a>
+        <a class="btn btn-ghost" href="#karya">Lihat Karya</a>
+      </div>
+      <div class="roles">
+        <span class="chip">Digital Marketing</span>
+        <span class="chip">Gaming Services</span>
+        <span class="chip">Kreator RAHASIKA</span>
+        <span class="chip">CSO Kereta</span>
+      </div>
+    </div>
+    <div class="photo-frame">
+      <img src="https://portofolio-purna-jejabvsj-8871.vercel.app/images/profil.jpg" alt="Purna Nugraha">
+      <div class="photo-badge"><span class="dot"></span>Purna Nugraha</div>
+    </div>
+  </div>
+  <div class="scroll-cue">SCROLL<i></i></div>
+</header>
+
+<div class="marquee"><div class="marquee-track"><span>DIGITAL MARKETING</span><span class="dot">·</span><span>GAMING SERVICES</span><span class="dot">·</span><span>KREATOR RAHASIKA</span><span class="dot">·</span><span>500+ TRANSAKSI</span><span class="dot">·</span><span>4 NEGARA</span><span class="dot">·</span><span>DIGITAL MARKETING</span><span class="dot">·</span><span>GAMING SERVICES</span><span class="dot">·</span><span>KREATOR RAHASIKA</span><span class="dot">·</span><span>500+ TRANSAKSI</span><span class="dot">·</span><span>4 NEGARA</span><span class="dot">·</span></div></div>
+
+<section id="statistik" style="padding-top:0;padding-bottom:0">
+  <div class="stats-bar">
+    <div class="stats">
+      <div class="stat reveal"><div class="num">5+</div><div class="lbl">Tahun Pengalaman</div></div>
+      <div class="stat reveal" style="--d:.08s"><div class="num">500+</div><div class="lbl">Transaksi Sukses</div></div>
+      <div class="stat reveal" style="--d:.16s"><div class="num">200+</div><div class="lbl">Pemain Dibantu</div></div>
+      <div class="stat reveal" style="--d:.24s"><div class="num">50+</div><div class="lbl">Klien Puas</div></div>
+      <div class="stat reveal" style="--d:.32s"><div class="num">4</div><div class="lbl">Negara Klien</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="tentang">
+  <div class="sec-head reveal">
+    <p class="eyebrow">Tentang Saya</p>
+    <h2>Kenalan dulu</h2>
+  </div>
+  <div class="bio">
+    <div class="bio-text reveal">
+      <p>Saya <b>Purna Nugraha</b> — freelancer digital marketing dan gaming services dengan pengalaman lebih dari 5 tahun. Saya membantu bisnis lewat iklan berbayar di Facebook, Google, dan Instagram, copywriting, dan pengelolaan media sosial; serta membantu pemain lewat joki Mobile Legends dan jual beli akun game.</p>
+      <p>Sampai hari ini saya telah menyelesaikan <b>500+ transaksi</b> dan melayani <b>50+ klien dari 4 negara</b>. Di luar itu, saya adalah kreator <b>RAHASIKA</b> — kanal video animasi edukasi — dan sehari-hari bekerja sebagai Passenger Service / CSO kereta.</p>
+    </div>
+    <aside class="bio-card reveal" style="--d:.1s">
+      <h3>Biodata singkat</h3>
+      <dl>
+        <div><dt>Nama</dt><dd>Purna Nugraha</dd></div>
+        <div><dt>Pekerjaan</dt><dd>Passenger Service / CSO Kereta</dd></div>
+        <div><dt>Freelance</dt><dd>Digital Marketing &amp; Gaming Services</dd></div>
+        <div><dt>Pengalaman</dt><dd>5+ tahun</dd></div>
+        <div><dt>Klien</dt><dd>Indonesia, Malaysia, Pakistan, Arab Saudi</dd></div>
+        <div><dt>Kanal</dt><dd>RAHASIKA — video animasi edukasi</dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section id="layanan">
+  <div class="sec-head reveal">
+    <p class="eyebrow">Layanan</p>
+    <h2>Tiga keahlian, <span class="accent">satu portofolio</span></h2>
+    <p>Marketing, gaming, dan video animasi edukasi — pilih yang kamu butuhkan, semuanya dikerjakan dengan standar yang sama: jelas, cepat, dan sampai beres.</p>
+  </div>
+  <div class="card-grid">
+    <div class="card svc reveal">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+      <h3>Digital Marketing</h3>
+      <ul>
+        <li>Iklan berbayar: Facebook Ads, Google Ads, Instagram Ads</li>
+        <li>Copywriting untuk promosi dan media sosial</li>
+        <li>Pengelolaan social media untuk bisnis</li>
+      </ul>
+      <p class="note">Contoh proyek: e-commerce fashion online (3 bulan) &amp; resto chain (4 bulan).</p>
+      <a class="mini-cta" href="https://wa.me/6289627939527" target="_blank" rel="noopener">Tanya layanan ini →</a>
+    </div>
+    <div class="card svc reveal" style="--d:.1s">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6h11a4.5 4.5 0 0 1 4.4 5.4l-.7 3.5a3 3 0 0 1-5.5 1.2L14.5 14h-5l-1.2 2.1a3 3 0 0 1-5.5-1.2l-.7-3.5A4.5 4.5 0 0 1 6.5 6z"/><path d="M7.5 9v3M6 10.5h3"/></svg></div>
+      <h3>Gaming Services</h3>
+      <ul>
+        <li>Joki Mobile Legends</li>
+        <li>Jual beli akun game</li>
+        <li>500+ transaksi sukses, 200+ pemain dibantu</li>
+      </ul>
+      <p class="note">Prestasi: Juara 3 Tournament ML 2024; Juara 1 &amp; 2 Kumala Fest 2024.</p>
+      <a class="mini-cta" href="https://wa.me/6289627939527" target="_blank" rel="noopener">Tanya layanan ini →</a>
+    </div>
+    <div class="card svc reveal" style="--d:.2s">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg></div>
+      <h3>Konten Animasi RAHASIKA</h3>
+      <ul>
+        <li>Video animasi edukasi vertikal dengan narasi suara</li>
+        <li>Cocok untuk konten edukasi anak dan penjelasan topik di media sosial</li>
+        <li>Topik penasaran, dijelaskan dengan cara yang mudah dipahami</li>
+      </ul>
+      <p class="note">Tiga video pilihan ada di bagian <a href="#karya" style="font-weight:700;color:var(--accent)">Karya RAHASIKA ↓</a></p>
+      <a class="mini-cta" href="https://wa.me/6289627939527" target="_blank" rel="noopener">Tanya layanan ini →</a>
+    </div>
+  </div>
+</section>
+
+<section id="kenapa">
+  <div class="sec-head reveal">
+    <p class="eyebrow">Kenapa Pilih Saya</p>
+    <h2>Tiga alasan, <span class="accent">tanpa basa-basi</span></h2>
+  </div>
+  <div class="card-grid">
+    <div class="card why-card reveal"><div class="why-num">01</div><h3>Berpengalaman</h3><p>5+ tahun menangani klien dari Indonesia dan berbagai negara.</p></div>
+    <div class="card why-card reveal" style="--d:.1s"><div class="why-num">02</div><h3>Hasil Jelas</h3><p>Semua project dilengkapi data dan laporan yang mudah dipahami.</p></div>
+    <div class="card why-card reveal" style="--d:.2s"><div class="why-num">03</div><h3>Respon Cepat</h3><p>Komunikasi lancar dan update rutin untuk setiap project.</p></div>
+  </div>
+</section>
+<section id="karya">
+  <div class="sec-head reveal">
+    <p class="eyebrow">Karya RAHASIKA</p>
+    <h2>Tonton langsung</h2>
+    <p>Tiga video animasi edukasi RAHASIKA — tekan tombol play untuk menonton langsung di sini.</p>
+  </div>
+  <div class="videos">
+    <article class="video-card reveal">
+      <div class="video-wrap">
+        <video controls preload="metadata" poster="https://portofolio-purna-jejabvsj-8871.vercel.app/images/poster-otak.jpg" src="https://portofolio-purna-jejabvsj-8871.vercel.app/videos/otak.mp4"></video>
+        <span class="dur">60 dtk</span>
+        <span class="play-hint">▶ Tonton</span>
+      </div>
+      <h3>Kenapa Otak Kita Suka Memikirkan Hal yang Belum Terjadi?</h3>
+      <p>Kenapa otak kita memikirkan hal yang belum terjadi — dan bagaimana cara menenangkannya.</p>
+    </article>
+    <article class="video-card reveal" style="--d:.1s">
+      <div class="video-wrap">
+        <video controls preload="metadata" poster="https://portofolio-purna-jejabvsj-8871.vercel.app/images/poster-burung.jpg" src="https://portofolio-purna-jejabvsj-8871.vercel.app/videos/burung.mp4"></video>
+        <span class="dur">64 dtk</span>
+        <span class="play-hint">▶ Tonton</span>
+      </div>
+      <h3>Burung yang Bisa Meniru Suara Kamera dan Gergaji Mesin!</h3>
+      <p>Burung lyrebird Australia yang bisa meniru suara kamera, gergaji mesin, sampai alarm mobil.</p>
+    </article>
+    <article class="video-card reveal" style="--d:.2s">
+      <div class="video-wrap">
+        <video controls preload="metadata" poster="https://portofolio-purna-jejabvsj-8871.vercel.app/images/poster-lubang.jpg" src="https://portofolio-purna-jejabvsj-8871.vercel.app/videos/lubang.mp4"></video>
+        <span class="dur">59 dtk</span>
+        <span class="play-hint">▶ Tonton</span>
+      </div>
+      <h3>Lubang Raksasa yang Tiba-Tiba Muncul di Tengah Kota</h3>
+      <p>Lubang raksasa yang tiba-tiba muncul di tengah kota — kenapa tanah bisa amblas begitu saja?</p>
+    </article>
+  </div>
+  <p class="karya-cta reveal">Mau video animasi seperti ini untuk topikmu? <a href="https://wa.me/6289627939527" target="_blank" rel="noopener">Chat WhatsApp →</a></p>
+</section>
+
+<section id="studi-kasus">
+  <div class="sec-head reveal">
+    <p class="eyebrow">Studi Kasus</p>
+    <h2>Kerja nyata, <span class="accent">bukan janji</span></h2>
+    <p>Dua proyek yang sudah berjalan — hasil terukurnya menyusul setelah datanya dilengkapi.</p>
+  </div>
+  <div class="case reveal">
+    <p class="meta">E-commerce · 3 Bulan</p>
+    <h3>Toko Fashion Online</h3>
+    <table>
+      <tr><td>Kebutuhan</td><td>Toko fashion online yang penjualannya menurun saat pandemi — butuh strategi marketing lengkap untuk mengembalikan penjualan.</td></tr>
+      <tr><td>Yang dikerjakan</td><td>Iklan berbayar Facebook &amp; Instagram, copywriting promosi, dan pengelolaan konten media sosial selama 3 bulan.</td></tr>
+      <tr><td>Hasil</td><td>Penjualan meningkat drastis dalam 3 bulan. <i>“Hasil yang luar biasa! Penjualan kami meningkat drastis dalam 3 bulan.”</i></td></tr>
+    </table>
+  </div>
+  <div class="case reveal">
+    <p class="meta">Social Media · 4 Bulan</p>
+    <h3>Resto Chain — Pengelolaan Media Sosial</h3>
+    <table>
+      <tr><td>Kebutuhan</td><td>Resto chain yang butuh brand awareness dan kunjungan pelanggan yang lebih ramai lewat media sosial.</td></tr>
+      <tr><td>Yang dikerjakan</td><td>Pengelolaan media sosial: konten harian, promosi menu, dan interaksi dengan pelanggan selama 4 bulan.</td></tr>
+      <tr><td>Hasil</td><td>Media sosial jadi sangat aktif dan banyak pelanggan baru. <i>“Media sosial kami sekarang sangat aktif dan banyak pelanggan baru!”</i></td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="prestasi">
+  <div class="sec-head reveal">
+    <p class="eyebrow">Prestasi</p>
+    <h2>Bukti, <span class="accent">bukan klaim</span></h2>
+    <p>Prestasi turnamen untuk layanan gaming — ini foto dari momen turnamennya.</p>
+  </div>
+  <div class="achieve">
+    <div class="trophy reveal"><img class="trophy-photo" src="https://portofolio-purna-jejabvsj-8871.vercel.app/images/turnamen-ml.jpg" alt="Tournament Mobile Legends 2024"><span class="badge">JUARA 3</span><h3>Tournament ML 2024</h3><p>Bersama Hasbi &amp; Amir.</p></div>
+    <div class="trophy reveal" style="--d:.1s"><img class="trophy-photo" src="https://portofolio-purna-jejabvsj-8871.vercel.app/images/kumala-fest.jpg" alt="Kumala Fest 2024"><span class="badge">JUARA 1 &amp; 2</span><h3>Kumala Fest 2024</h3><p>Dua gelar dalam satu festival.</p></div>
+  </div>
+</section>
+
+<section id="testimoni">
+  <div class="sec-head reveal">
+    <p class="eyebrow">Testimoni</p>
+    <h2>Kata mereka</h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal"><div class="stars">★★★★★</div><p>“Hasil yang luar biasa! Penjualan kami meningkat drastis dalam 3 bulan.”</p><div class="who"><b>Toko Fashion Online</b><span>E-commerce · 3 bulan</span></div></div>
+    <div class="testi-card reveal" style="--d:.1s"><div class="stars">★★★★★</div><p>“Media sosial kami sekarang sangat aktif dan banyak pelanggan baru!”</p><div class="who"><b>Resto Chain</b><span>Social Media · 4 bulan</span></div></div>
+    <div class="testi-card reveal" style="--d:.2s"><div class="stars">★★★★★</div><p>“Pelayanan bagus dan komunikasi lancar. Joki Mobile Legends dari Epic ke Mythic selesai dalam 5 hari.”</p><div class="who"><b>Amjad H. — Pakistan</b><span>Joki Mobile Legends</span></div></div>
+  </div>
+  <p class="testi-cta reveal"><a class="btn btn-primary" href="https://wa.me/6289627939527" target="_blank" rel="noopener">Jadi klien berikutnya →</a></p>
+</section>
+
+<section id="faq">
+  <div class="sec-head reveal">
+    <p class="eyebrow">FAQ</p>
+    <h2>Sering ditanyakan, <span class="accent">dijawab jujur</span></h2>
+  </div>
+  <div class="faq">
+    <details class="reveal"><summary>Berapa lama pengerjaannya?<span class="plus">+</span></summary><p>Tergantung jenis layanan dan antrean. Detail waktunya disepakati di awal lewat WhatsApp, sebelum pengerjaan dimulai — jadi tidak ada kejutan di tengah jalan.</p></details>
+    <details class="reveal" style="--d:.06s"><summary>Apakah ada revisi?<span class="plus">+</span></summary><p>Ada. Revisi dibicarakan di awal sesuai kesepakatan — tanyakan saat konsultasi supaya sama-sama jelas.</p></details>
+    <details class="reveal" style="--d:.12s"><summary>Bagaimana cara pembayarannya?<span class="plus">+</span></summary><p>Pembayaran dibicarakan saat deal. Silakan chat WhatsApp untuk detailnya.</p></details>
+    <details class="reveal" style="--d:.18s"><summary>Apakah melayani klien luar negeri?<span class="plus">+</span></summary><p>Ya. Klien saya berasal dari Indonesia, Malaysia, Pakistan, dan Arab Saudi — komunikasi lewat WhatsApp dan email.</p></details>
+    <details class="reveal" style="--d:.24s"><summary>Apakah konsultasi awal gratis?<span class="plus">+</span></summary><p>Ya, konsultasi awal gratis lewat WhatsApp. Ceritakan kebutuhanmu, nanti saya bantu petakan solusinya.</p></details>
+    <details class="reveal" style="--d:.3s"><summary>Video animasi RAHASIKA bisa dipesan custom?<span class="plus">+</span></summary><p>Bisa. Kirim topikmu lewat WhatsApp, nanti saya buatkan video animasi edukasi seperti contoh di bagian Karya.</p></details>
+  </div>
+</section>
+
+<section id="cara-order">
+  <div class="sec-head reveal">
+    <p class="eyebrow">Cara Order</p>
+    <h2>Mulai kerja sama <span class="accent">dalam 4 langkah</span></h2>
+  </div>
+  <div class="steps">
+    <div class="step reveal"><div class="n">01</div><h3>Chat WhatsApp</h3><p>Ceritakan kebutuhanmu — layanan apa, untuk apa, dan kapan butuhnya.</p></div>
+    <div class="step reveal" style="--d:.08s"><div class="n">02</div><h3>Konsultasi</h3><p>Kita sepakati layanan, waktu pengerjaan, dan biaya.</p></div>
+    <div class="step reveal" style="--d:.16s"><div class="n">03</div><h3>Deal</h3><p>Pengerjaan dimulai setelah kesepakatan.</p></div>
+    <div class="step reveal" style="--d:.24s"><div class="n">04</div><h3>Serah Terima</h3><p>Hasil dikirim dan direvisi sesuai kesepakatan awal.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="contact reveal">
+    <h2>Siap mulai? <span class="accent">Ini baru permulaan.</span></h2>
+    <p>Hubungi saya lewat jalur mana saja di bawah ini — dibalas secepatnya.</p>
+    <div class="links">
+      <a class="btn btn-primary" href="https://wa.me/6289627939527" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-ghost" href="mailto:purnanugraha20@gmail.com">Email</a>
+      <a class="btn btn-ghost" href="https://instagram.com/prnanugrhaa" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/purna-nugrahaaa-126a08366" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>Purna Nugraha © 2026 · Digital Marketing · Gaming Services · Kreator RAHASIKA</footer>
+<a class="wa-float" id="waFloat" href="https://wa.me/6289627939527" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+<script>
+// Animasi saat scroll: elemen .reveal muncul begitu masuk layar
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+  });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+// Angka statistik menghitung naik saat terlihat
+var io2 = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(!e.isIntersecting) return;
+    var el = e.target; io2.unobserve(el);
+    var m = el.textContent.match(/^(\d+)(\+?)$/);
+    if(!m) return;
+    var target = +m[1], suf = m[2], t0 = performance.now(), dur = 1200;
+    var tick = function(t){
+      var p = Math.min(1,(t-t0)/dur);
+      el.textContent = Math.round(target*(1-Math.pow(1-p,3))) + suf;
+      if(p<1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  });
+},{threshold:.5});
+document.querySelectorAll('.stat .num').forEach(function(n){ io2.observe(n); });
+
+// Opening baru: huruf nama muncul berurutan, tagline, bar + persen, tirai 2 lapis, hero ikut muncul
+(function(){
+  var loader = document.querySelector('.loader');
+  var accent = document.querySelector('.loader-accent');
+  var heroEls = document.querySelectorAll('.hero .eyebrow,.hero h1,.hero p.lead,.hero .cta-row,.hero .roles,.hero .photo-frame');
+  if(!loader || document.documentElement.classList.contains('seen')) return;
+  heroEls.forEach(function(el){ el.style.animationPlayState = 'paused'; });
+  document.querySelectorAll('.loader .mark .w').forEach(function(w, wi){
+    var t = w.textContent; w.textContent = '';
+    t.split('').forEach(function(ch, i){
+      var s = document.createElement('i'); s.textContent = ch;
+      s.style.animationDelay = (0.08 + wi * 0.4 + i * 0.05) + 's';
+      w.appendChild(s);
+    });
+  });
+  var fill = document.querySelector('.loader .bar i');
+  var pct = document.querySelector('.loader .pct');
+  var t0 = performance.now(), DUR = 1400;
+  requestAnimationFrame(function(){ if(fill) fill.style.width = '100%'; });
+  var iv = setInterval(function(){
+    var p = Math.min(100, Math.round((performance.now() - t0) / DUR * 100));
+    if(pct) pct.textContent = p + '%';
+    if(p >= 100) clearInterval(iv);
+  }, 30);
+  setTimeout(function(){
+    loader.classList.add('done');
+    if(accent) accent.classList.add('done');
+    heroEls.forEach(function(el, idx){
+      el.style.animationDelay = (0.05 + idx * 0.08) + 's';
+      el.style.animationPlayState = 'running';
+    });
+    setTimeout(function(){
+      loader.style.display = 'none';
+      if(accent) accent.style.display = 'none';
+    }, 950);
+  }, 1650);
+})();
+
+// Tandai kunjungan ini supaya preloader tidak muncul lagi di kunjungan berikutnya
+try{ sessionStorage.setItem('pf-seen','1'); }catch(e){}
+
+// Toggle mode gelap/terang (ikon bulan/matahari diganti lewat CSS)
+var themeBtn = document.getElementById('themeToggle');
+themeBtn.addEventListener('click', function(){
+  var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+  if(dark){ document.documentElement.removeAttribute('data-theme'); }
+  else{ document.documentElement.setAttribute('data-theme','dark'); }
+  try{ localStorage.setItem('pf-theme', dark ? 'light' : 'dark'); }catch(e){}
+});
+
+// Progress bar saat scroll + tombol WA melayang
+var prog = document.getElementById('progress');
+var wa = document.getElementById('waFloat');
+window.addEventListener('scroll', function(){
+  var h = document.documentElement;
+  var p = h.scrollTop / (h.scrollHeight - h.clientHeight);
+  prog.style.width = (p * 100) + '%';
+  if(h.scrollTop > 400){ wa.classList.add('show'); } else { wa.classList.remove('show'); }
+}, {passive:true});
+
+// Kalau satu video diputar, video lain berhenti
+document.querySelectorAll('.video-wrap video').forEach(function(v){
+  v.addEventListener('play', function(){
+    document.querySelectorAll('.video-wrap video').forEach(function(o){ if(o !== v) o.pause(); });
+  });
+});
+</script>
+<script>
+// Ganti bahasa Indonesia / English — semua teks diterjemahkan dari kamus EN, teks asli disimpan untuk kembali
+var EN_DICT = {"4 NEGARA": "4 COUNTRIES", "500+ TRANSAKSI": "500+ TRANSACTIONS", "KREATOR RAHASIKA": "RAHASIKA CREATOR", ". Di luar itu, saya adalah kreator": ". Beyond that, I'm the creator of", "5+ tahun": "5+ years", "5+ tahun menangani klien dari Indonesia dan berbagai negara.": "5+ years serving clients from Indonesia and other countries.", "50+ klien dari 4 negara": "50+ clients from 4 countries", "500+ transaksi": "500+ transactions", "500+ transaksi sukses, 200+ pemain dibantu": "500+ successful transactions, 200+ players helped", "59 dtk": "59 sec", "60 dtk": "60 sec", "64 dtk": "64 sec", "Ada. Revisi dibicarakan di awal sesuai kesepakatan — tanyakan saat konsultasi supaya sama-sama jelas.": "Yes. Revisions are discussed upfront as part of the agreement — ask during the consultation so we're both clear.", "Apakah ada revisi?": "Are revisions included?", "Apakah konsultasi awal gratis?": "Is the first consultation free?", "Apakah melayani klien luar negeri?": "Do you serve international clients?", "Bagaimana cara pembayarannya?": "How does payment work?", "Berapa lama pengerjaannya?": "How long does it take?", "Berpengalaman": "Experienced", "Bersama Hasbi & Amir.": "With Hasbi & Amir.", "Biodata singkat": "Quick bio", "Bisa. Kirim topikmu lewat WhatsApp, nanti saya buatkan video animasi edukasi seperti contoh di bagian Karya.": "Yes. Send your topic via WhatsApp and I'll make an educational animation video like the examples in the Works section.", "Bukti,": "Proof,", "Burung lyrebird Australia yang bisa meniru suara kamera, gergaji mesin, sampai alarm mobil.": "The Australian lyrebird that can mimic camera sounds, chainsaws, even car alarms.", "Burung yang Bisa Meniru Suara Kamera dan Gergaji Mesin!": "The Bird That Can Mimic Camera and Chainsaw Sounds!", "CSO Kereta": "Train CSO", "Cara Order": "How to Order", "Ceritakan kebutuhanmu — layanan apa, untuk apa, dan kapan butuhnya.": "Tell me what you need — which service, what it's for, and when you need it.", "Chat WhatsApp": "Chat on WhatsApp", "Chat WhatsApp →": "Chat on WhatsApp →", "Cocok untuk konten edukasi anak dan penjelasan topik di media sosial": "Great for kids' educational content and explaining topics on social media", "Contoh proyek: e-commerce fashion online (3 bulan) & resto chain (4 bulan).": "Sample projects: online fashion e-commerce (3 months) & restaurant chain (4 months).", "Copywriting untuk promosi dan media sosial": "Copywriting for promos and social media", "Dua gelar dalam satu festival.": "Two titles in one festival.", "Dua proyek yang sudah berjalan — hasil terukurnya menyusul setelah datanya dilengkapi.": "Two projects already delivered — measurable results to follow once the data is complete.", "E-commerce · 3 Bulan": "E-commerce · 3 Months", "E-commerce · 3 bulan": "E-commerce · 3 months", "Halo, saya": "Hello, I'm", "Hasil": "Result", "Hasil Jelas": "Clear Results", "Hasil dikirim dan direvisi sesuai kesepakatan awal.": "Results are delivered and revised as agreed at the start.", "Hubungi saya lewat jalur mana saja di bawah ini — dibalas secepatnya.": "Reach me through any of the channels below — I'll reply as soon as possible.", "Iklan berbayar Facebook & Instagram, copywriting promosi, dan pengelolaan konten media sosial selama 3 bulan.": "Paid Facebook & Instagram ads, promo copywriting, and social media content management for 3 months.", "Iklan berbayar: Facebook Ads, Google Ads, Instagram Ads": "Paid ads: Facebook Ads, Google Ads, Instagram Ads", "Indonesia, Malaysia, Pakistan, Arab Saudi": "Indonesia, Malaysia, Pakistan, Saudi Arabia", "Ini baru permulaan.": "This is just the beginning.", "JUARA 1 & 2": "1ST & 2ND PLACE", "JUARA 3": "3RD PLACE", "Jadi klien berikutnya →": "Become the next client →", "Joki Mobile Legends": "Mobile Legends boosting", "Jual beli akun game": "Game account trading", "Kanal": "Channel", "Karya RAHASIKA": "RAHASIKA Works", "Karya RAHASIKA ↓": "RAHASIKA Works ↓", "Kata mereka": "What they say", "Kebutuhan": "Needs", "Kenalan dulu": "Let me introduce myself", "Kenapa Otak Kita Suka Memikirkan Hal yang Belum Terjadi?": "Why Does Our Brain Love Thinking About Things That Haven't Happened?", "Kenapa Pilih Saya": "Why Choose Me", "Kenapa otak kita memikirkan hal yang belum terjadi — dan bagaimana cara menenangkannya.": "Why our brain keeps thinking about things that haven't happened — and how to calm it down.", "Kerja nyata,": "Real work,", "Kita sepakati layanan, waktu pengerjaan, dan biaya.": "We agree on the service, timeline, and price.", "Klien": "Clients", "Klien Puas": "Happy Clients", "Komunikasi lancar dan update rutin untuk setiap project.": "Smooth communication and regular updates for every project.", "Konsultasi": "Consultation", "Konten Animasi RAHASIKA": "RAHASIKA Animation Content", "Kreator RAHASIKA": "RAHASIKA Creator", "Layanan": "Services", "Lihat Karya": "View My Work", "Lubang Raksasa yang Tiba-Tiba Muncul di Tengah Kota": "The Giant Sinkhole That Suddenly Appeared in the Middle of a City", "Lubang raksasa yang tiba-tiba muncul di tengah kota — kenapa tanah bisa amblas begitu saja?": "A giant sinkhole that suddenly appeared downtown — why can the ground just collapse like that?", "Marketing, gaming, dan video animasi edukasi — pilih yang kamu butuhkan, semuanya dikerjakan dengan standar yang sama: jelas, cepat, dan sampai beres.": "Marketing, gaming, and educational animation videos — pick what you need; everything is done to the same standard: clear, fast, and finished properly.", "Mau video animasi seperti ini untuk topikmu?": "Want an animation video like this for your topic?", "Media sosial jadi sangat aktif dan banyak pelanggan baru.": "Social media became very active, with many new customers.", "Mulai kerja sama": "Start working together", "Nama": "Name", "Negara Klien": "Client Countries", "Passenger Service / CSO Kereta": "Passenger Service / Train CSO", "Pekerjaan": "Day job", "Pemain Dibantu": "Players Helped", "Pembayaran dibicarakan saat deal. Silakan chat WhatsApp untuk detailnya.": "Payment is discussed when we agree on the deal. Chat on WhatsApp for details.", "Pengalaman": "Experience", "Pengelolaan media sosial: konten harian, promosi menu, dan interaksi dengan pelanggan selama 4 bulan.": "Social media management: daily content, menu promos, and customer interaction for 4 months.", "Pengelolaan social media untuk bisnis": "Social media management for businesses", "Pengerjaan dimulai setelah kesepakatan.": "Work starts once we've agreed.", "Penjualan meningkat drastis dalam 3 bulan.": "Sales rose sharply within 3 months.", "Portofolio 2026": "Portfolio 2026", "Prestasi": "Achievements", "Prestasi turnamen untuk layanan gaming — ini foto dari momen turnamennya.": "Tournament achievements for gaming services — photos from the events.", "Prestasi: Juara 3 Tournament ML 2024; Juara 1 & 2 Kumala Fest 2024.": "Achievements: 3rd Place ML Tournament 2024; 1st & 2nd Place Kumala Fest 2024.", "Purna Nugraha © 2026 · Digital Marketing · Gaming Services · Kreator RAHASIKA": "Purna Nugraha © 2026 · Digital Marketing · Gaming Services · RAHASIKA Creator", "RAHASIKA — video animasi edukasi": "RAHASIKA — educational animation videos", "Respon Cepat": "Fast Response", "Resto Chain": "Restaurant Chain", "Resto Chain — Pengelolaan Media Sosial": "Restaurant Chain — Social Media Management", "Resto chain yang butuh brand awareness dan kunjungan pelanggan yang lebih ramai lewat media sosial.": "A restaurant chain that needed brand awareness and more customer visits through social media.", "Sampai hari ini saya telah menyelesaikan": "To date, I have completed", "Saya": "I'm", "Semua project dilengkapi data dan laporan yang mudah dipahami.": "Every project comes with data and reports that are easy to understand.", "Serah Terima": "Delivery", "Sering ditanyakan,": "Frequently asked,", "Siap mulai?": "Ready to start?", "Social Media · 4 Bulan": "Social Media · 4 Months", "Social Media · 4 bulan": "Social Media · 4 months", "Studi Kasus": "Case Studies", "Tahun Pengalaman": "Years of Experience", "Tanya layanan ini →": "Ask about this service →", "Tentang Saya": "About Me", "Tergantung jenis layanan dan antrean. Detail waktunya disepakati di awal lewat WhatsApp, sebelum pengerjaan dimulai — jadi tidak ada kejutan di tengah jalan.": "It depends on the service and the queue. The timeline is agreed upfront via WhatsApp, before work starts — so there are no surprises midway.", "Testimoni": "Testimonials", "Tiga alasan,": "Three reasons,", "Tiga keahlian,": "Three skills,", "Tiga video animasi edukasi RAHASIKA — tekan tombol play untuk menonton langsung di sini.": "Three RAHASIKA educational animation videos — press play to watch them right here.", "Tiga video pilihan ada di bagian": "Three selected videos are in the", "Toko Fashion Online": "Online Fashion Store", "Toko fashion online yang penjualannya menurun saat pandemi — butuh strategi marketing lengkap untuk mengembalikan penjualan.": "An online fashion store whose sales dropped during the pandemic — it needed a full marketing strategy to bring sales back.", "Tonton langsung": "Watch now", "Topik penasaran, dijelaskan dengan cara yang mudah dipahami": "Curiosity-driven topics, explained in an easy-to-understand way", "Tournament ML 2024": "ML Tournament 2024", "Transaksi Sukses": "Successful Transactions", "Video animasi RAHASIKA bisa dipesan custom?": "Can I order a custom RAHASIKA animation video?", "Video animasi edukasi vertikal dengan narasi suara": "Vertical educational animation videos with voice narration", "Ya, konsultasi awal gratis lewat WhatsApp. Ceritakan kebutuhanmu, nanti saya bantu petakan solusinya.": "Yes, the first consultation is free via WhatsApp. Tell me what you need and I'll help map out the solution.", "Ya. Klien saya berasal dari Indonesia, Malaysia, Pakistan, dan Arab Saudi — komunikasi lewat WhatsApp dan email.": "Yes. My clients come from Indonesia, Malaysia, Pakistan, and Saudi Arabia — we communicate via WhatsApp and email.", "Yang dikerjakan": "What I did", "bukan janji": "not promises", "bukan klaim": "not claims", "dalam 4 langkah": "in 4 steps", "dan melayani": "and served", "dijawab jujur": "answered honestly", "satu portofolio": "one portfolio", "tanpa basa-basi": "no nonsense", "— freelancer digital marketing & gaming services. Membantu bisnis dan pemain sampai beres, dipercaya klien dari Indonesia, Malaysia, Pakistan, dan Arab Saudi.": "— a freelance digital marketer & gaming services provider. I help businesses and players get things done, trusted by clients from Indonesia, Malaysia, Pakistan, and Saudi Arabia.", "— freelancer digital marketing dan gaming services dengan pengalaman lebih dari 5 tahun. Saya membantu bisnis lewat iklan berbayar di Facebook, Google, dan Instagram, copywriting, dan pengelolaan media sosial; serta membantu pemain lewat joki Mobile Legends dan jual beli akun game.": "— a freelance digital marketer and gaming services provider with 5+ years of experience. I help businesses with paid ads on Facebook, Google, and Instagram, copywriting, and social media management; and I help players with Mobile Legends boosting and game account trading.", "— kanal video animasi edukasi — dan sehari-hari bekerja sebagai Passenger Service / CSO kereta.": "— an educational animation video channel — and by day I work as a Passenger Service / Train CSO.", "“Hasil yang luar biasa! Penjualan kami meningkat drastis dalam 3 bulan.”": "“Amazing results! Our sales rose sharply within 3 months.”", "“Media sosial kami sekarang sangat aktif dan banyak pelanggan baru!”": "“Our social media is now very active with lots of new customers!”", "“Pelayanan bagus dan komunikasi lancar. Joki Mobile Legends dari Epic ke Mythic selesai dalam 5 hari.”": "“Great service and smooth communication. Mobile Legends boosting from Epic to Mythic finished in 5 days.”", "▶ Tonton": "▶ Watch"};
+var ID_TITLE = document.title;
+var EN_TITLE = "Purna Nugraha — Digital Marketing, Gaming Services & RAHASIKA Creator";
+var metaDescEl = document.querySelector('meta[name="description"]');
+var ID_DESC = metaDescEl ? metaDescEl.getAttribute('content') : '';
+var EN_DESC = "Freelance digital marketer & gaming services provider with 5+ years of experience, 500+ transactions, clients from 4 countries, and creator of RAHASIKA educational animation videos.";
+var origText = new Map();
+function applyLang(lang){
+  document.documentElement.lang = lang;
+  var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  var nodes = [], n;
+  while(n = walker.nextNode()){ nodes.push(n); }
+  nodes.forEach(function(node){
+    var par = node.parentNode;
+    if(!par) return;
+    if(par.closest && par.closest('.stat .num')) return;
+    var t = node.nodeValue, k = t.trim();
+    if(!k) return;
+    if(lang === 'en'){
+      if(!origText.has(node)) origText.set(node, t);
+      if(EN_DICT[k]) node.nodeValue = t.replace(k, EN_DICT[k]);
+    } else if(origText.has(node)){
+      node.nodeValue = origText.get(node);
+    }
+  });
+  if(lang === 'en'){ document.title = EN_TITLE; if(metaDescEl) metaDescEl.setAttribute('content', EN_DESC); }
+  else { document.title = ID_TITLE; if(metaDescEl) metaDescEl.setAttribute('content', ID_DESC); }
+  var btn = document.getElementById('langToggle');
+  if(btn){ btn.querySelectorAll('span[data-lang]').forEach(function(sp){ sp.classList.toggle('on', sp.getAttribute('data-lang') === lang); }); }
+  try{ localStorage.setItem('pf-lang', lang); }catch(e){}
+}
+var langBtn = document.getElementById('langToggle');
+if(langBtn){ langBtn.addEventListener('click', function(){
+  applyLang(document.documentElement.lang === 'en' ? 'id' : 'en');
+}); }
+try{ if(localStorage.getItem('pf-lang') === 'en') applyLang('en'); }catch(e){}
+</script>
+</body>
+</html>
